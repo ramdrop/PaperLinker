@@ -17,8 +17,8 @@ python paper_linker.py --pdf_in='input.pdf' --pdf_out='output.pdf'
 
 ### Help
 ```shell
-/$ python linker.py -h
-usage: linker.py [-h] [--conference {CVPR,ECCV,ICCV,ICRA,IROS,default}] [--max_ref MAX_REF] [--pdf_in PDF_IN] [--pdf_out PDF_OUT]
+/$ python paper_linker.py -h
+usage: paper_linker.py [-h] [--conference {CVPR,ECCV,ICCV,ICRA,IROS,default}] [--max_ref MAX_REF] [--pdf_in PDF_IN] [--pdf_out PDF_OUT]
 
 optional arguments:
   -h, --help            show this help message and exit
