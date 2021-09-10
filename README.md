@@ -4,8 +4,8 @@ Insert links to citations that point to its cooresponding reference item.
 
 ### Install
 ```shell
-git clone https://github.com/ramdrop/linker
-cd linker
+git clone https://github.com/ramdrop/PaperLinker
+cd PaperLinker
 pip install -r requirements.txt
 ```
 
