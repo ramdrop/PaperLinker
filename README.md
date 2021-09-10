@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 ### Usage
 ``` shell
-python linker.py --pdf_in='input.pdf' --pdf_out='output.pdf'
+python paper_linker.py --pdf_in='input.pdf' --pdf_out='output.pdf'
 
 ```
 
