@@ -13,13 +13,15 @@ parser.add_argument("--conference",
                     choices=['CVPR', 'ECCV', 'ICCV', 'ICRA', 'IROS', 'default'],
                     help='define citation and reference index templates')
 parser.add_argument("--max_ref", type=int, default=50, help='the max number ofreference entries')
-parser.add_argument("--pdf_in", type=str, default='input2.pdf', help='pdf file to add links')
-parser.add_argument("--pdf_out", type=str, default='output2.pdf', help='output pdf file with added links')
+parser.add_argument("--pdf_in", type=str, default='', help='pdf file to add links')
+parser.add_argument("--pdf_out", type=str, default='', help='output pdf file with added links')
 args = parser.parse_args()
 
 # define cite and reference templates
+src_templates = ["[{}]", "[{}", "{}]"]
+refer_template = '{}. '
+
 if args.conference == 'ECCV':
-    src_templates = ["[{}]", "[{}", "{}]"]
     refer_template = '{}. '
 
 doc = fitz.open(args.pdf_in)
