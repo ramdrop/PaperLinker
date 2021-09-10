@@ -23,6 +23,9 @@ refer_template = '{}. '
 
 if args.conference == 'ECCV':
     refer_template = '{}. '
+elif args.conference == 'CVPR':
+    refer_template = '[{}]'
+    src_templates = ["[{}]", "[{}", "{},", "{}]"]
 
 doc = fitz.open(args.pdf_in)
 page_count = doc.pageCount
