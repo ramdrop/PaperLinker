@@ -23,7 +23,11 @@ refer_template = '{}. '
 
 if args.conference == 'ECCV':
     refer_template = '{}. '
+    src_templates = ["[{}]", "[{}", "{}]"]
 elif args.conference == 'CVPR':
+    refer_template = '[{}]'
+    src_templates = ["[{}]", "[{}", "{},", "{}]"]
+elif args.conference == 'ICRA':
     refer_template = '[{}]'
     src_templates = ["[{}]", "[{}", "{},", "{}]"]
 
